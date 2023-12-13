@@ -1,0 +1,24 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  @include responsive(500px) {
+    .nav-link {
+      display: none;
+    }
+  }
+}
+
+.nav-link {
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 1px;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+
+  &:hover {
+    opacity: 0.4;
+  }
+}
